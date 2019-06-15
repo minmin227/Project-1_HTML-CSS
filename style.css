@@ -1,0 +1,288 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.visuallyhidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 62.5%;
+    background: white;
+}
+
+h1{
+    font-size: 6.8em;
+    font-weight: 700;
+    color: #333333;
+    width: 60%;
+}
+
+h2{
+    font-size: 3.9em;
+    font-weight: 700;
+    color: #333333;
+}
+
+h3{
+    font-size: 2.2em;
+    text-transform: uppercase;
+    color: rgb(184, 184, 184);
+}
+
+p{
+    font-size: 2em;
+    font-weight: 500;
+    color: rgb(184, 184, 184);
+}
+
+a{
+    font-size: 1.9em;
+    font-weight: 700;
+    color:#333333;
+}
+
+a:hover{
+color: grey;
+}
+
+.wrapper{
+    width: 100%;
+    max-width:1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+header{
+    background-image: linear-gradient(to right,
+    rgb(41, 128, 185, 0.4),
+    rgb(109, 213, 250, 0.4),
+    rgb(255, 255, 255, 0.4)), 
+    url(assets/image-main.jpeg);
+    background-size: cover;
+    height: 80vh;
+    background-attachment: fixed;
+}
+
+.logo1{
+    position: absolute;
+    top: 0;
+    left: 1rem;
+}
+
+.logo1 h2, .logo2 h2{
+    font-size: 39px;
+    font-weight: 700;
+    color:#005769;
+}
+
+.navtop{
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    padding: 1rem;
+}
+
+.navtop li{
+    float: left;
+    list-style-type:  none;
+    text-align: center;
+    display: block;
+    padding: 1rem;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+.navtop a{
+    text-decoration: none;
+}
+
+.navtop li:hover{
+    background:#16D6D1;
+    transition-duration: 0.5s;
+}
+
+.slogan{
+    clear: both;
+    position: absolute;
+    top: 10em;
+    left: 1em;
+}
+
+section{
+    margin: 3rem auto;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.img1{
+    background: url(assets/image-1.jpeg);
+    background-size: cover;
+    width: 31.33%;
+    height: 80vh;
+    float: left;
+    margin:1%;
+
+    transition-duration: 0.5s;
+}
+
+.img1:hover{
+    filter: contrast(120%) brightness(120%);
+    transform: scale(1.1, 1.1);
+    transition-duration: 0.5s;
+    z-index: 999;
+    border-radius: 10%;
+}
+
+.img2{
+    background:url(assets/image-2.jpeg);
+    filter:brightness(110%);
+    height: 80vh;
+    width: 64.66%;
+    float: left;
+    margin:1%;
+    position: relative;
+}
+
+.readmore1{
+    background: #F6F8FA;
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 0 50px;
+}
+
+.img3{
+    background: url(assets/image-3.jpeg);
+    background-size: 100%;
+    background-repeat: none;
+    height: 80vh;
+    width: 64.66%;
+    float: left;
+    margin: 1%;
+    position: relative;
+}
+.readmore2{
+    background: whitesmoke;
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 0 50px;
+}
+
+.img4{
+    background: url(assets/image-4.jpeg);
+    background-size: 100%;
+    height: 80vh;
+    width: 31.33%;
+    float: left;
+    margin: 1%;
+}
+
+.img5{
+    background: url(assets/image-5.jpeg);
+}
+
+.img6{
+    background: url(assets/image-6.jpeg);
+}
+
+.img5, .img6{
+    height: 80vh;
+    width: 48%;
+    float: left;
+    margin: 1%;
+    background-size: 100%;
+}
+
+footer{
+    background: #F6F8FA;
+    width: 100%;
+}
+
+.logo2{
+    width: 37%;
+    float: left;
+}
+
+.navbot{
+    width: 12.5%;
+    float: left;
+}
+
+.navbot li{
+    list-style-type: none;
+    padding: 5px;
+    display: block;
+}
+
+.navbot a{
+    text-decoration: none;
+}
+
+.social{
+    width: 12.5%;
+    float: left;
+}
+
+.social li{
+    list-style-type: none;
+    padding: 5px;
+    display: block;
+}
+
+.social a{
+    text-decoration: none;
+}
+
+.detailbot{
+    width: 38%;
+    float: left;
+    padding-left: 2rem;
+    text-align: left;
+}
+
+.hackeryou{
+    clear:both;
+    border-top: dotted 1px grey;
+    color: #777777;
+}
+
+button{
+    height: 3rem;
+    width: 6rem;
+    border-radius: 5px;
+    background: #16D6D1;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
